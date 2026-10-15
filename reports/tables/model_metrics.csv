@@ -1,0 +1,3 @@
+"model","test_policy_terms","test_policy_years","observed_claims","predicted_claims","mean_poisson_deviance","term_cost_MAE","term_cost_RMSE","observed_annual_cost","predicted_annual_cost","aggregate_actual_to_expected"
+"Training overall baseline",7500,6383.75,545,543.932590832935,0.381239232931633,986.128042509458,2684.85212123804,640.223763461915,609.194003920179,1.05093575994192
+"Poisson frequency x Gamma severity",7500,6383.75,545,545.629083594774,0.379134923389613,985.8251034057,2679.07661267051,640.223763461915,613.091709219951,1.04425447911616

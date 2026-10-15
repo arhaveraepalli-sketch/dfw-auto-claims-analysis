@@ -1,0 +1,58 @@
+Frequency model
+
+Call:
+glm(formula = claim_count ~ driver_age_group + vehicle_type + 
+    vehicle_age_group + offset(log(exposure_years)), family = poisson(link = "log"), 
+    data = train)
+
+Coefficients:
+                      Estimate Std. Error z value             Pr(>|z|)    
+(Intercept)           -2.61979    0.06105 -42.913 < 0.0000000000000002 ***
+driver_age_group18-24  0.52152    0.07047   7.401    0.000000000000135 ***
+driver_age_group25-39  0.02082    0.06067   0.343              0.73144    
+driver_age_group65+    0.12186    0.07616   1.600              0.10960    
+vehicle_typeSUV       -0.04348    0.05597  -0.777              0.43723    
+vehicle_typePickup     0.10728    0.06537   1.641              0.10076    
+vehicle_age_group0-4  -0.00684    0.06062  -0.113              0.91016    
+vehicle_age_group10+   0.16539    0.06047   2.735              0.00624 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 8613.6  on 22499  degrees of freedom
+Residual deviance: 8542.3  on 22492  degrees of freedom
+AIC: 11746
+
+Number of Fisher Scoring iterations: 6
+
+
+Severity model
+
+Call:
+glm(formula = paid_amount_usd ~ driver_age_group + vehicle_type + 
+    vehicle_age_group, family = Gamma(link = "log"), data = sev_data)
+
+Coefficients:
+                      Estimate Std. Error t value             Pr(>|t|)    
+(Intercept)            8.63185    0.04868 177.322 < 0.0000000000000002 ***
+driver_age_group18-24  0.14567    0.05576   2.612             0.009072 ** 
+driver_age_group25-39  0.03225    0.04801   0.672             0.501806    
+driver_age_group65+    0.10852    0.06025   1.801             0.071888 .  
+vehicle_typeSUV        0.21895    0.04428   4.945      0.0000008396972 ***
+vehicle_typePickup     0.35320    0.05179   6.820      0.0000000000128 ***
+vehicle_age_group0-4   0.18859    0.04796   3.932      0.0000878403789 ***
+vehicle_age_group10+  -0.16393    0.04789  -3.423             0.000635 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Gamma family taken to be 0.6255974)
+
+    Null deviance: 1233.7  on 1640  degrees of freedom
+Residual deviance: 1156.6  on 1633  degrees of freedom
+AIC: 32184
+
+Number of Fisher Scoring iterations: 5
+
+
+Poisson Pearson dispersion: 1.004515 

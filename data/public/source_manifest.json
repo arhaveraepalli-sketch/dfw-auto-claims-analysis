@@ -1,0 +1,25 @@
+{
+  "source_url": "https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2024/13.pdf",
+  "source_title": "TxDOT 2024 Crashes and Injuries by County, Table 13",
+  "source_as_of": "2025-04-09",
+  "retrieved_on": "2026-10-15",
+  "source_pdf_sha256": "1e3f69d52919124cb1b244896b3d5f06b246c9a6667c267fa038a7c5053330e4",
+  "geography": "NCTCOG 12-county Metropolitan Planning Area",
+  "scope_url": "https://www.nctcog.org/getmedia/650c132b-7fd9-478a-bafd-2d995ccc0c8c/1-0-Introduction.pdf",
+  "counties": [
+    "Collin",
+    "Dallas",
+    "Denton",
+    "Ellis",
+    "Hood",
+    "Hunt",
+    "Johnson",
+    "Kaufman",
+    "Parker",
+    "Rockwall",
+    "Tarrant",
+    "Wise"
+  ],
+  "row_count": 12,
+  "notes": "Only DFW rows retained. Crash location is not policy garaging. Counts are not insurance claims or exposure."
+}
